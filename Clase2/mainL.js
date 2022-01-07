@@ -42,38 +42,40 @@ class Student2 {
 
 //Ejercicio Jacobo
 class Mascotas {
-  constructor({ tipo, nombre, edad }) {
-    this.tipo = tipo;
-    this.nombre = nombre;
-    this.edad = edad;
-  }
-
+    constructor({ tipo, nombre, edad }) {
+      this.tipo = tipo;
+      this.nombre = nombre;
+      this.edad = edad;
+      this.alive = true
+    }
   
-  comer(hora) {
-    let alive = true;
-    if (hora > 6 && hora < 8) {
-      console.log("Desayunó");
-    } else {
-      console.log("Se murió tu mascota!! :(");
-      alive = false;
+    
+    comer(hora) {
+      if (hora > 6 && hora < 8) {
+        console.log("Desayunó");
+      } else {
+        console.log("Se murió tu mascota!! :(")
+        this.alive = false;
+      }
     }
-    return alive;
-  }
-
-
-  dormir(hora) {
-    if (this.comer.alive && hora >= 20) {
-      console.log("Se durmio");
-    } else if (this.comer.alive) {
-      console.log("Es irresponsable, se va de farra");
-    } else if (!this.comer.alive) {
-      console.log("Ya no va a despertar, es un angelito");
+  
+  
+    dormir(hora) {
+      if(this.alive) {
+          if(hora >= 20) {
+              console.log("Se durmio");
+          } else {
+              console.log("Es irresponsable, se va de farra");
+          }
+      } else {
+          console.log("Ya no va a despertar, es un angelito");
+      }
     }
   }
-}
-//Crear una instancia
-const lorito = new Mascotas({
-  nombre: "Pepe",
-  tipo: "Pajaro",
-  edad: 1,
-});
+  
+  //Crear una instancia
+  const lorito = new Mascotas({
+    nombre: "Pepe",
+    tipo: "Pajaro",
+    edad: 1,
+  });
