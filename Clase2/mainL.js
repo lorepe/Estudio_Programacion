@@ -75,9 +75,9 @@ class Mascotas {
   
   comer(hora) {
     if (hora > 6 && hora < 8) {
-      console.log("Desayunó");
+      console.log(`${this.nombre} Desayunó`);
     } else {
-      console.log("Se murió tu mascota!! :(")
+      console.log(`Se murió ${this.nombre}!! y tenia ${this.edad} año/s :( `)
       this.alive = false;
     }
   }
@@ -86,12 +86,12 @@ class Mascotas {
   dormir(hora) {
     if(this.alive) {
         if(hora >= 20) {
-            console.log("Se durmio");
+            console.log(`${this.nombre} Se durmio`);
         } else {
-            console.log("Es irresponsable, se va de farra");
+            console.log(`${this.nombre} Es irresponsable, se va de farra`);
         }
     } else {
-        console.log("Ya no va a despertar, es un angelito");
+        console.log(`${this.nombre} Ya no va a despertar, es un angelito`);
     }
   }
 }
@@ -102,7 +102,4 @@ const lorito = new Mascotas({
   tipo: "Pajaro",
   edad: 1,
 });
-
-/* ------------------------------------------------------------ */
-
 
