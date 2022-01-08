@@ -26,8 +26,45 @@ class Student {
 
 
 
+class Course {
+    constructor({
+        name,
+        classes =[],
+        teacher
+    }){
+        this.name = name;
+        this.classes = classes;
+        this.teacher = teacher
+    }
+}
+class Classes{
+    constructor({
+        name,
+        description,
+        time = "",
+        files = []
+    }
+    ){
+        this.name = name;
+        this.description = description;
+        this.time = time;
+        this.files = files; 
+    }
+}
+// Ejemplo
+const CursoBasicoPOO = new Classes({
+    name: "Abstraccion JavaScript",
+    time: "9:15",
+    files:["main.js","index.html"]
+})
 
-
+class Comments{
+    constructor({
+        student,
+        time,
+        
+    })
+}
 
 
 class LearningPaths {
@@ -46,3 +83,6 @@ const EscuelaDesarrollo = new LearningPaths({
     "Curso Pensaminto computacional",
   ],
 });
+
+
+
