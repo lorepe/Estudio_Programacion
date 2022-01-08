@@ -52,7 +52,7 @@ class Mascotas {
     
     comer(hora) {
       if (hora > 6 && hora < 8) {
-        console.log("Desayunó");
+        console.log("9Desayunó");
       } else {
         console.log("Se murió tu mascota!! :(")
         this.alive = false;
@@ -71,7 +71,8 @@ class Mascotas {
           console.log("Ya no va a despertar, es un angelito");
       }
     }
-  }
+ }
+
   
   //Crear una instancia
   const lorito = new Mascotas({
