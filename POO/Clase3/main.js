@@ -37,6 +37,7 @@ class Course {
         this.teacher = teacher
     }
 }
+
 class Classes{
     constructor({
         name,
@@ -62,7 +63,7 @@ class Comments{
     constructor({
         student,
         time,
-        
+
     })
 }
 
@@ -86,3 +87,15 @@ const EscuelaDesarrollo = new LearningPaths({
 
 
 
+//
+class Course {
+    constructor({
+        name,
+        classes =[],
+        teacher
+    }){
+        this._name = name;
+        this.classes = classes;
+        this.teacher = teacher
+    }
+}
