@@ -35,7 +35,10 @@ class LearningPaths {
     constructor({
         name,
         courses = []
-    })
+    }) {
+        this.name = name;
+        this.courses = courses
+    }
 }
 
 const desarrolloWeb = new LearningPaths({
