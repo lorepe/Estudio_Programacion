@@ -1,6 +1,0 @@
-/* 
-Javascrpt es asincrono
-
-*/
-
-s
