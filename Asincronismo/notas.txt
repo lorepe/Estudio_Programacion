@@ -1,0 +1,4 @@
+memory heap
+
+cola de tareas
+even loop = se encarga de preguntar si esta vacio el call stack 
