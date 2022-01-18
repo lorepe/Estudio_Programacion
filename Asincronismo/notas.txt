@@ -2,3 +2,8 @@ memory heap
 
 cola de tareas
 even loop = se encarga de preguntar si esta vacio el call stack 
+
+callbacks corren en cualquier navegador, callback help se anidan demaciados callback(creas codigo para humanos) 
+
+promesas= facilmete enlazables, no maneja excepciones solo maneja el catch al final, requiere un polified para correr en todos los navegadores "Babel"
+Async:await= tambien necesita un polified es una estructura amigable
